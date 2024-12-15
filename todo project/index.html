@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Categories & Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+
+        <!-- Search Bar -->
+        <input type="text" id="searchBar" placeholder="Search tasks..." onkeyup="filterTasks()">
+
+        <!-- Category Filter -->
+        <select id="categoryFilter" onchange="filterTasks()">
+            <option value="">All Categories</option>
+            <option value="study">study</option>
+            <option value="workout">workout</option>
+            <option value="Shopping">Shopping</option>
+        </select>
+
+        <!-- Task Input Form -->
+        <div class="task-form">
+            <input type="text" id="taskInput" placeholder="Add new task">
+            <select id="categoryInput">
+                <option value="input's-category">Input's-Category</option>
+                <option value="study">study</option>
+                <option value="workout">workout</option>
+                <option value="Shopping">Shopping</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="taskList"></ul>
+    </div>
+    <footer class="branding"> <p>Created by: [Blessing, Nanette and Mandra]</p>
+         <p>Contact: [0540173950 / 0500408375 / 0257736708]</p> 
+        </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
